@@ -1,0 +1,89 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+img
+	height: 32vh
+
+.my-header
+	position: relative
+	background: #D79DC0
+.offset10
+	height: 10px
+
+.button
+	line-height: 1
+	color: white
+	font-size: 35px
+	position: absolute
+	top: 10px
+	right: 10px
+
+.heart
+	position: absolute
+	right: 50%
+	margin-right: -250px
+	top: 50%
+	margin-top: -250px
+.heart-svg
+	height: 500px
+	width: 500px
+
+.box
+	position: relative
+.h1
+	font-family: 'aero'
+	color: #fff
+	font-size: 55px
+	line-height: 1
+	position: absolute
+	top: 30%
+	left: 18%
+
+.mm-menu.mm-theme-black
+	background: #FCB8BB
+
+.mm-navbar
+	border-bottom: none
+.mm-menu.mm-theme-black .mm-listview
+	border-bottom: none
+
+
+
+@import "media" // Always at the end
